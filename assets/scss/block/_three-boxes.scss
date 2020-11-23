@@ -1,0 +1,79 @@
+.three-boxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 75px;
+
+  &--blog {
+    margin-bottom: 75px;
+  }
+
+  @include mq(lg) {
+    margin-top: 40px;
+  }
+
+  @include mq(md) {
+    display: block;
+  }
+
+  &__box {
+    width: 30%;
+
+    @include mq(md) {
+      width: 100%;
+
+      &:not(:first-of-type) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 300;
+
+    @include mq(lg) {
+      font-size: 24px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50px;
+      background: $primary-red;
+      margin-top: 17px;
+      margin-bottom: 17px;
+
+      @include mq(md) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--blog {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    padding-left: 20px;
+
+    @include mq(md) {
+      padding-left: 0;
+    }
+  }
+
+  &__img-frame {
+    margin-bottom: 20px;
+  }
+
+  &__view-more {
+    text-align: right;
+    margin-top: 15px;
+  }
+
+  &__link {
+    color: $primary-red;
+  }
+}

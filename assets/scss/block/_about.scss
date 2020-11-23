@@ -1,0 +1,122 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 180px;
+
+  @include mq(lg) {
+    padding-bottom: 100px;
+  }
+
+  &__content {
+    display: flex;
+
+    @include mq(lg) {
+      display: block;
+    }
+  }
+
+  &__description {
+    width: 60%;
+
+    @include mq(lg) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 100;
+    font-size: 70px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+    padding-top: 10px;
+
+    @include mq(lg) {
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+
+    @include mq(md) {
+      font-size: 50px;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 300;
+    color: $font-color-grey;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    padding-left: 70px;
+    line-height: 1.25;
+
+    @include mq(lg) {
+      padding-left: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100px;
+      background: $primary-red;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    width: 415px;
+    margin-left: 95px;
+
+    @include mq(lg) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__pictures {
+    width: 40%;
+    position: relative;
+
+    @include mq(lg) {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mq(sm) {
+      display: block;
+    }
+  }
+
+  &__picture {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(#000000, 0.16);
+
+    @include mq(lg) {
+      width: 48%;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+    }
+
+    &--2 {
+      position: absolute;
+      top: 106px;
+      left: -96px;
+      z-index: -1;
+
+      @include mq(lg) {
+        position: static;
+      }
+
+      @include mq(sm) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

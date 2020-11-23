@@ -1,0 +1,58 @@
+.subscribe {
+  color: #fff;
+  background-color: $primary-red;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__email {
+    background-color: #F85B80;
+    color: #fff;
+    padding: 18px 260px 18px 15px;
+
+    &::placeholder  {
+      color: #fff;
+    }
+
+    @include mq(md) {
+      margin-bottom: 20px;
+      padding: 10px 10px;
+      width: 100%;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 16px 85px;
+    margin-left: 25px;
+    transition: 0.3s;
+
+    @include mq(md) {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-red;
+    }
+  }
+}

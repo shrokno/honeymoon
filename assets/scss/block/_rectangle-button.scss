@@ -1,0 +1,32 @@
+.rectangle-button {
+  text-align: center;
+
+  &--left {
+    text-align: left;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $primary-red;
+    border: 2px solid $primary-red;
+    padding: 15px 40px;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $primary-red;
+      color: #fff;
+    }
+
+    &--contact {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 17px 77px;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-red;
+      }
+    }
+  }
+}

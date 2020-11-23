@@ -1,0 +1,49 @@
+.section-title {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: $primary-red;
+    margin: 0 auto 45px;
+  }
+
+  &--light {
+    &::before {
+      background: #fff;
+    }
+  }
+
+  &__title {
+    font-size: 69px;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    &--light {
+      color: #fff;
+    }
+
+    @include mq(md) {
+      font-size: 60px;
+    }
+
+    @include mq(sm) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-family: 'PT Serif', serif;
+    font-size: 21px;
+    font-style: italic;
+    color: $font-color-grey;
+
+    &--light {
+      color: #fff;
+    }
+  }
+}

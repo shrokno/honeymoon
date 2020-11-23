@@ -1,0 +1,9 @@
+.package {
+  padding-top: 80px;
+  padding-bottom: 125px;
+  background-color: #F7F7F7;
+
+  @include mq(md) {
+    padding-bottom: 80px;
+  }
+}

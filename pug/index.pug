@@ -1,0 +1,154 @@
+- var path = "./";
+include ./_include/_head.pug
+  title SLIYP
+body
+  include ./_include/_header.pug
+  main#home
+    .hero-image
+      h1.hero-image__title
+        |ENJOY YOUR<br>
+        |<span class="hero-image__big-font">HONEYMOON</span>
+        |<br>LEFT THE REST TO US
+    section#about.about
+      .container
+        .about__content
+          .about__description(data-aos="fade-up")
+            h2().about__title More Than 20 years<br>of Experience
+            h3.about__sub-title Ngga ada itu dua puluh tahun, baru bikin aja ini,<br>gaya gayaan aja buat nipu kalian
+            p.about__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no, ei aeque viris euismod quo. Id qui altera equidem.
+          .about__pictures
+            img(src="./img/about-1.jpg", alt="", data-aos="fade-left").about__picture.about__picture--1
+            img(src="./img/about-2.jpg", alt="", data-aos="fade-right").about__picture.about__picture--2
+    section.subscribe
+      .container
+        h2.subscribe__title Subsribe to our newsletter for deal & promo
+        .subscribe__form
+          input(type="email", placeholder="example@example.com").subscribe__email
+          button(type="submit").subscribe__submit SUBSCRIBE
+    section#package.package
+      .container
+        .section-title(data-aos="fade-up")
+          h2.section-title__title OUR PACKAGE
+          p.section-title__text Jangan Percaya Tipu Tipu Aja Ini
+        .three-boxes.three-boxes--box
+          .three-boxes__box(data-aos="fade-up")
+            h3.three-boxes__title Luxury Paradice
+            p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+          .three-boxes__box(data-aos="fade-up")
+            h3.three-boxes__title Deluxe Gold
+            p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+          .three-boxes__box(data-aos="fade-up")
+            h3.three-boxes__title Premium Silver
+            p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+    section#trip.trip
+      .container
+        .section-title(data-aos="fade-up")
+          h2.section-title__title FEATURED TRIP
+          p.section-title__text Sama aja ini semua g ada beda
+        .trip__main-frame.u-picture-frame
+          .trip__main-picture
+            .trip__main-box
+              .trip__title-box(data-aos="fade-up")
+                h3.trip__title Luxury Greece
+                p.trip__sub-title 6 Days 5 night
+                p.trip__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.
+              a(href="#").trip__detail(data-aos="fade-up") View Detail >>
+        .trip__sub-trips
+          .trip__sub-box
+            .trip__sub-frame.u-picture-frame
+              .trip__sub-picture
+                a(href="#").trip__sub-link View Detail >>
+            .trip__title-box(data-aos="fade-up")
+              h3.trip__title.trip__title--sub Belgia Village
+              p.trip__sub-title.trip__sub-title--sub 3 Days 2 night
+              p.trip__sub-text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.
+          .trip__sub-box
+            .trip__sub-frame.u-picture-frame
+              .trip__sub-picture.trip__sub-picture--paradise
+                a(href="#").trip__sub-link View Detail >>
+            .trip__title-box(data-aos="fade-up")
+              h3.trip__title.trip__title--sub Middle East Paradise
+              p.trip__sub-title.trip__sub-title--sub 6 Days 5 night
+              p.trip__sub-text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu, eu melius constituam sit. Et nam soleat accusamus. Vim hinc aeque viderer no.
+        .rectangle-button
+          a(href="#").rectangle-button__link VIEW MORE DESTINATION
+    section#testimony.testimony
+      .container
+        .testimony__content
+          .section-title.section-title--light(data-aos="fade-up")
+            h2.section-title__title.section-title__title--light TESTIMONY
+            p.section-title__text.section-title__text--light Yang Bagus Bagusnya Aja yg Dibilangin
+          .swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                h3.swiper-title "Our honeymoon just awesome"
+                p.swiper-text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                p.swiper-name Robert & Jane
+              .swiper-slide
+                h3.swiper-title "Our honeymoon just great"
+                p.swiper-text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                p.swiper-name Robert & Jane
+              .swiper-slide
+                h3.swiper-title "Our honeymoon just wonderful"
+                p.swiper-text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                p.swiper-name Robert & Jane
+            .swiper-button-prev
+            .swiper-button-next
+    section#blog.blog
+      .container
+        .section-title(data-aos="fade-up")
+          h2.section-title__title BLOG
+          p.section-title__text Sumpah ini semua kontennya nyolong dari blog orang
+        .blog__content
+          .three-boxes.three-boxes--blog
+            .three-boxes__box
+              .three-boxes__img-frame.u-picture-frame
+                img(src="./img/blog-1.jpg", alt="")
+              div(data-aos="fade-up")
+                h3.three-boxes__title.three-boxes__title--blog Choose your breakfast carefully
+                p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                .three-boxes__view-more
+                  a(href="#").three-boxes__link View More >>
+            .three-boxes__box
+              .three-boxes__img-frame.u-picture-frame
+                img(src="./img/blog-2.jpg", alt="")
+              div(data-aos="fade-up")
+                h3.three-boxes__title.three-boxes__title--blog Take your homeymoon to the next level
+                p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                .three-boxes__view-more
+                  a(href="#").three-boxes__link View More >>
+            .three-boxes__box
+              .three-boxes__img-frame.u-picture-frame
+                img(src="./img/blog-3.jpg", alt="")
+              div(data-aos="fade-up")
+                h3.three-boxes__title.three-boxes__title--blog Don’t desttroy your holiday with to many gadget
+                p.three-boxes__text Lorem ipsum dolor sit amet, id altera persequeris vim, mea an appareat prodesset. Cu mea error eripuit delicata. Nec soluta aliquid similique eu.
+                .three-boxes__view-more
+                  a(href="#").three-boxes__link View More >>
+          .rectangle-button
+            a(href="#").rectangle-button__link VIEW MORE STORY
+    section#contact.contact-us
+      .container
+        .contact-us__content
+          .contact-us__description
+            h2.contact-us__title DONT BE SHY<br>TALK TO US
+            p.contact-us__text Karyawan Kami Sebenarnya Malas Jawab Email Kelen tapi mau gimana lagi kan ya… tuntutan pekerjaan ya udah segitu aja curhatnya hiks
+            .rectangle-button.rectangle-button--left
+              a(href="#").rectangle-button__link.rectangle-button__link--contact CONTACT US
+          .contact-us__info
+            .contact-us__sns
+              a(href="#")
+                i(aria-hidden="true").fab.fa-3x.fa-facebook-square
+              a(href="#")
+                i(aria-hidden="true").fab.fa-3x.fa-instagram-square
+              a(href="#")
+                i(aria-hidden="true").fab.fa-3x.fa-twitter-square
+              a(href="#")
+                i(aria-hidden="true").fab.fa-3x.fa-linkedin
+            h3.contact-us__info-title ADDRESS
+            p.contact-us__address
+              |Lorem, ipsum<br>
+              |Lorem ipsum dolor sit amet<br>
+              |Minato, Tokyo 0000000<br>
+              |TEL: 00-0000-0000
+  include ./_include/_footer.pug

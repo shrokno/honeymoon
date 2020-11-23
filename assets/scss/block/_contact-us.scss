@@ -1,0 +1,116 @@
+.contact-us {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $primary-red;
+
+  &__content {
+    display: flex;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__description {
+    width: 45%;
+
+    @include mq(lg) {
+      width: 65%;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.1;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50px;
+      background: #fff;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    @include mq(md) {
+      font-size: 50px;
+    }
+
+    @include mq(sm) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    margin-bottom: 72px;
+
+    @include mq(md) {
+      font-size: 16px;
+    }
+  }
+
+  &__info {
+    width: 55%;
+    padding-left: 15%;
+    padding-top: 10%;
+
+    @include mq(lg) {
+      width: 35%;
+      padding-left: 2%;
+      padding-top: 0;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      padding-left: 0;
+      display: block;
+    }
+  }
+
+  &__sns {
+    margin-bottom: 50px;
+    text-rendering: optimizeLegibility;
+
+    i {
+      color: #fff;
+      margin-right: 15px;
+    }
+  }
+
+  &__info-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 100;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50px;
+      background: #fff;
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__address {
+    color: #fff;
+    line-height: 1.75;
+
+    a {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.swiper-container {
+  width: 100%;
+  margin-top: 75px;
+  height: 270px;
+  font-family: "PT Serif", serif;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-title {
+  color: #ffe200;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 46px;
+  margin-bottom: 10px;
+
+  @include mq(sm) {
+    font-size: 24px;
+  }
+}
+
+.swiper-text {
+  color: #fff;
+  width: 60%;
+  display: block;
+  margin: 0 auto 30px;
+
+  @include mq(md) {
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+
+  @include mq(sm) {
+    font-size: 16px;
+  }
+}
+
+.swiper-name {
+  color: #fff;
+  font-size: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  z-index: 10;
+  transform: translate(0%, -50%);
+  margin-top: 0;
+  background-image: none;
+  color: #fff;
+  top: 30%;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  position: relative;
+  font-family: "Font Awesome 5 Free", sans-serif;
+  text-rendering: optimizeLegibility;
+  opacity: 1;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+}
+.swiper-button-prev::after {
+  content: "\f104";
+}
+.swiper-button-next::after {
+  content: "\f105";
+}
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: #fff;
+}

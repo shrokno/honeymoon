@@ -1,0 +1,187 @@
+.trip {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  &__main-frame {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mq(lg) {
+      margin-top: 40px;
+    }
+  }
+
+  &__main-picture {
+    background-image: url("../img/trip-greece.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 420px;
+  }
+
+  &__main-box {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    background-color: rgba(#fff, 0.84);
+    padding-top: 40px;
+
+    @include mq(lg) {
+      width: 100%;
+    }
+  }
+
+  &__title-box {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 10px;
+
+    @include mq(lg) {
+      font-size: 45px;
+    }
+
+    @include mq(sm) {
+      font-size: 32px;
+    }
+
+    &--sub {
+      font-size: 46px;
+      margin-bottom: 0;
+      line-height: 1.5;
+
+      @include mq(lg) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__sub-title {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "PT Serif", serif;
+    color: $font-color-grey;
+
+    @include mq(sm) {
+      font-size: 16px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 50px;
+      background: $primary-red;
+      margin: 25px auto 30px;
+
+      @include mq(sm) {
+        margin: 10px auto 15px;
+      }
+    }
+
+    &--sub {
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 50px;
+        background: $primary-red;
+        margin: 20px auto 30px;
+
+        @include mq(sm) {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    padding: 0 55px;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @include mq(lg) {
+      padding: 0 20px;
+    }
+
+    @include mq(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__detail {
+    color: $primary-red;
+  }
+
+  &__sub-trips {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__sub-box {
+    width: 49%;
+
+    @include mq(md) {
+      width: 100%;
+
+      &:not(:first-of-type) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__sub-frame {
+    margin-bottom: 15px;
+  }
+
+  &__sub-picture {
+    height: 290px;
+    background-image: url("../img/trip-belgia-village.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    &--paradise {
+      background-image: url("../img/trip-middle-east-paradise.jpg");
+    }
+  }
+
+  &__sub-link {
+    background-color: rgba($primary-red, 0.84);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "PT Serif", serif;
+    width: 60%;
+    padding: 30px 0;
+    text-align: center;
+
+    @include mq(sm) {
+      padding: 15px 0;
+    }
+  }
+
+  &__sub-text {
+    font-weight: 400;
+    text-align: center;
+    padding: 0 25px;
+
+    @include mq(lg) {
+      padding: 0;
+    }
+  }
+}
